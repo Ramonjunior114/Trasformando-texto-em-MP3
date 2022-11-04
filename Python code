@@ -1,0 +1,17 @@
+#importe as bibliotecas 
+#importante instalar as bibliotecas gtts e playsound
+
+#import as bibliotecas 
+from gtts import gTTS
+from playsound import playsound
+
+#definindo a linguagem e o tipo de audio utilizado
+linguagem = 'pt-br'
+audio = 'audio.mp3'
+
+#texto que vai ser trasformado em audio
+texto = gTTS( text = 'ola mundo, aqui esta uma forma simples de trasformar textos em audios', lang = linguagem)
+
+#salvar e reproduzir o audio do texto
+texto.save(audio)
+playsound(audio)
